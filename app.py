@@ -107,7 +107,7 @@ else:
     print("It's Cold")
 print("Done")'''
 ################################################################
-# EXCESISE : get an input of weight and unit.
+'''# EXCESISE : get an input of weight and unit.
 weight = int(input("what is your weight? "))
 kg_lbs = input("Is your weight in (K)g or (L)bs? ")
 if kg_lbs.upper() == 'K':
@@ -115,10 +115,74 @@ if kg_lbs.upper() == 'K':
     print("Weight in Lbs: " + str(converted))
 else:
     converted = weight * 0.45
-    print("Weight in Kgs: " + str(converted))
+    print("Weight in Kgs: " + str(converted))'''
+
+#######################################################################
+#WHILE LOOP
+
+'''i = 1
+while i <= 1_000:
+    print(i)
+    i = i + 1'''
+
+''' i = 1
+while i <= 10:
+    print(i * "$") # this prints the dollar signs and increnments
+    i = i + 1 '''
+
+'''# LIST
+names = ["rene", "john",'abbey','ronny']
+print(names[0])
+names[0] = 'Renne' # this will chage the list Index 0 to Renne instade of rene
+print(names[-1]) # gives you end of list
+print(names)
+print(names[0:3]) # gives you less index from original but does not change the original list
+'''
+'''numbers = [1,2,3,4,5,6,7,8,9]
+#numbers.append(6) # insert 6 at the end
+#numbers.insert(0, -1)  # insert -1 at the begaining of list
+#numbers.remove(6) # removing the 6 in between
+#numbers.clear() # gives you an empty list
+#print(numbers)
+#print(6 in numbers) # search if 6 is in the list => boolean expression
+#print(10 in numbers) #theres no 10 in the list
+#print(len(numbers))
+'''
+
+######################################################################################
+
+''''# this is a for-loop
+numbers = [1,2,3,4,5,6,7,8,9]
+for item in numbers:
+    print(item)
 
 
+i = 0
+while i < len(numbers):
+    print(numbers[i])
+    i = i + 1 # this increments. i++ in java
 
+# range of 0 - 4 will print out
+numbers = range(5)
+for n in numbers:
+    print(n)
 
+# range of 5 - 9 will print out
+numbers = range(5,10)
+for n in numbers: # for loop
+    print(n)
 
+# range of 5 - 9 will print out but 2 by 2 => 5,7,9
+numbers = range(5,10,2)
+for n in numbers: # for loop
+    print(n)
+
+for n in range(5): # for loop
+    print(n)
+'''
+###################################################################################
+#CREATING A TUPLE OBJECT => tuples are immutable => once created, cannot be changed
+
+numbers = (1,4, 3, 2, 1, 1,2,3,4)
+print(numbers.count(1))
 
